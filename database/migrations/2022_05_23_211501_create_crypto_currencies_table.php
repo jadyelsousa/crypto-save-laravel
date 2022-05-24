@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('crypto_currencies', function (Blueprint $table) {
             $table->id();
+            $table->string('symbol');
+            $table->decimal('bidPrice', 15,2);
             $table->timestamps();
         });
     }

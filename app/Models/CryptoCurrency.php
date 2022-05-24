@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class CryptoCurrency extends Model
 {
+
     use HasFactory;
+    protected $fillable = [
+        'symbol',
+        'bidPrice',
+
+    ];
+
+    public $timestamps = true;
 }
